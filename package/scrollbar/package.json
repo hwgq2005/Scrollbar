@@ -1,0 +1,28 @@
+{
+  "name": "h-scrollbar",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "hwgq2005",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwgq2005/h-scrollbar.git"
+  },
+  "keywords": [
+    "bookcss",
+    "hbook",
+    "css",
+    "js",
+    "ui"
+  ],
+  "description": "Scrollbar",
+  "bugs": {
+    "url": "https://github.com/hwgq2005/h-scrollbar/issues"
+  },
+  "homepage": "https://github.com/hwgq2005/h-scrollbar#readme",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
+

@@ -1,22 +1,22 @@
 Scrollbar
 
-Get Start : https://hwgq2005.github.io/Scrollbar
+Get Start : https://hwgq2005.github.io/h-scrollbar
 
 <p align="left">
-<a href="https://www.npmjs.com/package/scrollbar"><img src="https://img.shields.io/npm/dt/scrollbar.svg" alt="Downloads"> </a><a href="https://www.npmjs.com/package/scrollbar"><img src="https://img.shields.io/npm/v/scrollbar.svg" alt="Version"></a> <a href="https://www.npmjs.com/package/scrollbar"><img src="https://img.shields.io/npm/l/scrollbar.svg" alt="License"></a>
+<a href="https://www.npmjs.com/package/h-scrollbar"><img src="https://img.shields.io/npm/dt/h-scrollbar.svg" alt="Downloads"> </a><a href="https://www.npmjs.com/package/h-scrollbar"><img src="https://img.shields.io/npm/v/h-scrollbar.svg" alt="Version"></a> <a href="https://www.npmjs.com/package/h-scrollbar"><img src="https://img.shields.io/npm/l/h-scrollbar.svg" alt="License"></a>
 </p>
 
 ###Introduce
-Scrollbar 
+Scrollbar
 
 ###Install
 ```
-npm install scrollbar  
+npm install h-scrollbar  
 ```
 
 ###Usage
 ```
-var Scrollbar = require('scrollbar');
+var Scrollbar = require('h-scrollbar');
 Scrollbar({
 	id:'scroll',
 	height:80
@@ -24,8 +24,8 @@ Scrollbar({
 ```
 ###CDN
 
-- https://unpkg.com/scrollbar/dist/css/modal.min.css
-- https://unpkg.com/scrollbar/dist/js/modal.min.js
+- https://unpkg.com/h-scrollbar/dist/css/h-scrollbar.min.css
+- https://unpkg.com/h-scrollbar/dist/js/h-scrollbar.min.js
 
 ###Contact
 
