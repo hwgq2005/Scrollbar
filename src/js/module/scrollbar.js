@@ -115,39 +115,42 @@
 			_self.scrollBarTop = parseInt(_self.scrollBar.style.top.substring(0, _self.scrollBar.style.top.length - 2)) || 0;//获得滚动条的Top值
 
 			document.onmousemove = function(e) {
-				console.log(_self.scrollStatus)
+
 				var newX = e.clientX,
 					newY = e.clientY;
+
 				differx = newX - x;
 				differY = newY - y;
-
 				_self.direct = - differY;
 
 				if (_self.scrollStatus) {
-					
 					_self.scroll.call(_self, e , Math.abs(differY),_self.scrollBarTop);
 				}
 
 			}
 
 			document.onmouseup = function(e) {
+
 				_self.scrollStatus = false;
 				differx = null;
 				differY = null;
 				document.onmousemove = null;
 				document.onmouseup = null;
+
 			}
 		};
 
 		function mousewheel(e){
+
 			_self.scrollBarTop = parseInt(_self.scrollBar.style.top.substring(0, _self.scrollBar.style.top.length - 2)) || 0;//获得滚动条的Top值	
 			e.wheelDelta && (_self.direct = e.wheelDelta) || (_self.direct = -e.detail); //兼容火狐滚动方向
 			_self.scroll.call(_self, e , _self.scrollHeight,_self.scrollBarTop);
+
 		}
 
 	}
 
-
+	// 滚动位置
 	Scrollbar.prototype.scroll = function(e,scrollHeight,scrollBarTop) {
 
 		var _self = this,
@@ -157,6 +160,7 @@
 			oneScrollHeight = parseInt((scrollBarTop + scrollHeight)* _self.scrollContentHeight /  _self.options.height);//每滚1像素对等于内容区域的滚动高度
 
 		if (_self.direct > 0) {
+
 			//判断滚动条Top值是否大于0
 			if (scrollBarTop <= scrollHeight) {
 				_self.scrollBar.style.top = '0px';
@@ -168,13 +172,12 @@
 			}
 
 		} else {
-			//判断滚动条Top值是否小于（固定高度再减去滚动条高度）
 
+			//判断滚动条Top值是否小于（固定高度再减去滚动条高度）
 			if (overHeight <= scrollHeight) {
 				_self.scrollBar.style.top = scrollBarTop + overHeight + 'px'; //滚动位置Top + 剩余可用高度
 				_self.scrollContent.style.top =  _self.options.height - _self.scrollContentHeight + 'px';
 			} else {
-				
 				var Top = scrollBarTop + scrollHeight; //滚动位置Top - 滚动条高度
 				_self.scrollBar.style.top = Top + 'px'; //滚动位置Top + 滚动条高度
 				_self.scrollContent.style.top = - oneScrollHeight  + 'px';
