@@ -28,7 +28,7 @@
 		<h2 class="title">Scrollbar</h2>
 		<p>滚动条</p>
 		<div class="btn-group">
-			<a href="https://github.com/hwgq2005/modal-mobile" class="btn btn-large btn-primary download">Scrollbar (v0.0.1)</a>
+			<a href="https://github.com/hwgq2005/modal-mobile" class="btn btn-large btn-primary download">Scrollbar (v0.0.3)</a>
 			<a href="#start" class="btn btn-large btn-primary download">开始使用</a>
 		</div>
 	</div>
@@ -51,20 +51,15 @@
 			<h1 class="module-tit">Demo</h1>
 			<div class="docs-example">
 				
-				<div id="scroll" class="scroll">
-
-					<div class="scroll-content">
-					你会发现：JavaScript解释器认为null是属于object数据类型的一种特殊形式，而function(){}是function类型，也就是说函数也是一种基本数据类型，而不是对象的一种特殊形式。
-实际上，在JavaScript中，函数是一个极容易引起误解或引发歧义的数据类型，它可以是独立的函数类型，又可以作为对象的方法，也可以被称为类或构造器，还可以作为函数对象而存在等。
-所以，在《JavaScript权威指南》中把function被看做是object基本数据类型的一种特殊对象，另外《悟透JavaScript》和《JavaScript高级程序设计》也把函数视为对象，而不是一种基本数据类型。但是在《JavaScript语言精髓与编程实践》中却把function视为一种基本数据类型，而把null视为object类型的一种特殊形式。至于谁对谁错，看来只有根据具体情况而定了。
+					<div  id="scroll">
+					在微信上充值话费，早已不是新鲜事，而现在微信新增了一项功能：赠送手机充值卡。功能入口位于：“我的钱包”-“手机充值”中。 你可以选择“以爱之名”和“我们的友谊”两种充值卡，均能充值移动、联通、电信的话费或流量，而且有多款精美卡面可选。其中“以爱之名”：可以充值30元话费，或者充值500MB流量；而“我们的友谊”可以充值20元话费，或者充值30MB流量；充值卡购买后，有效期1年，仅能赠送给好友，若对方24小时未领取，则会退回你的微信卡包，可自己使用。
 					</div>
-					
-				</div>
 				
 			</div>
 		</div>
 
 		<div class="module">
+
 			<h1 class="module-tit">Usage</h1>
 <pre class="prettyprint linenums">
 调用方式：
@@ -84,7 +79,7 @@ Scrollbar({
 		            <tbody>
 		              <tr>
 		                <td><code>id</code></td>
-		                <td>string，例如："modal"</td>
+		                <td>string，例如："scrollbar"</td>
 		              </tr>
 		              <tr>
 		                <td><code>height</code></td>

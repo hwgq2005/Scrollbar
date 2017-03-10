@@ -3,18 +3,12 @@
 
 @import "../config";
 
-html{
-  font-size:62.5%;
-}
-
-.scroll{
-  position: relative;
-  padding-right: 4px;
-  height: 100px;
-  overflow: hidden;
+.scroll-wrapper{
+  word-wrap: break-word;
   .scroll-content{
     position: relative;
-    margin-right: 8px;
+    padding-right: 12px;
+    word-wrap: break-word;
     -moz-user-select:none;
     -webkit-user-select:none;
     -ms-user-select:none;
@@ -25,8 +19,8 @@ html{
     position: absolute;
     top:0;
     bottom:0;
-    right:4px;
-    width:4px;
+    right:0;
+    width:6px;
     height: 100%;
     background-color: #ddd;
     .scroll-bar{

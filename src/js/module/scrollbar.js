@@ -1,7 +1,7 @@
 /**
  * @authors H君
- * @date    2017-03-06 18:28:41
- * @version 0.0.1
+ * @date    2017-03-10 15:24:08
+ * @version 0.0.3
  */
 
 (function(global, factory) {
@@ -16,14 +16,14 @@
 	"use strict";
 
 	// 版本号
-	var Version = '0.0.1';
+	var Version = '0.0.3';
 
 
 	var Scrollbar = function(options) {
 
 		// 默认配置
 		var defaults = {
-			id: 'Scrollbar' + new Date().getTime()
+
 		}
 
 		var options = extend(defaults, options);
@@ -47,13 +47,25 @@
 
 		var _self = this;
 
-		element.style.height = options.height + 'px';
+		if (!element) return;
 
-		_self.scrollContent = element.querySelector('.scroll-content');
-		_self.scrollContentHeight = _self.scrollContent.offsetHeight; // 获取区域高度
+		element.className += ' scroll-wrapper';
+		_self.scrollContentHeight = element.offsetHeight; // 获取区域高度
 
 		// 内容高度大于固定高度
 		if (_self.scrollContentHeight > options.height) {
+
+			element.style.position = 'relative';
+			element.style.height = options.height + 'px';
+			element.style.overflow = 'hidden';
+			
+			_self.scrollContent = document.createElement("div");
+			_self.scrollContent.className += ' scroll-content';
+			_self.scrollContent.innerHTML = element.innerHTML;
+
+			element.innerHTML = '';
+			element.appendChild(_self.scrollContent);
+
 			_self.createTool(options, element);
 		}
 
@@ -143,7 +155,7 @@
 
 		var	overHeight = _self.options.height - (_self.scrollBarHeight + scrollBarTop), //滚动条剩下多少到底部
 			oneScrollHeight = parseInt((scrollBarTop + scrollHeight)* _self.scrollContentHeight /  _self.options.height);//每滚1像素对等于内容区域的滚动高度
-		
+
 		if (_self.direct > 0) {
 			//判断滚动条Top值是否大于0
 			if (scrollBarTop <= scrollHeight) {

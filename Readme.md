@@ -24,8 +24,8 @@ Scrollbar({
 ```
 ###CDN
 
-- https://unpkg.com/h-scrollbar/dist/css/h-scrollbar.min.css
-- https://unpkg.com/h-scrollbar/dist/js/h-scrollbar.min.js
+- https://unpkg.com/h-scrollbar/dist/css/scrollbar.min.css
+- https://unpkg.com/h-scrollbar/dist/js/scrollbar.min.js
 
 ###Contact
 
