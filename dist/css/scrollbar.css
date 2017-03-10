@@ -10,7 +10,6 @@ html {
   .scroll .scroll-content {
     position: relative;
     margin-right: 8px;
-    height: 250px;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
