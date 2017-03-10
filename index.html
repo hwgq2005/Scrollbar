@@ -1,0 +1,116 @@
+<!doctype html>
+<html  lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="description" content="Hbook,致力于前端开发推广">
+	<meta name="keywords" content="前端,前端开发,前端框架,css,html,js,jquery,ui,设计,hbook">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Scrollbar</title>
+	<link rel="Shortcut Icon" href="docs/images/hbook.ico">
+	<link rel="stylesheet" href="docs/css/common.css">
+	<link rel="stylesheet" href="docs/css/hbook-button.css">
+	<link rel="stylesheet" href="docs/css/hbook-table.css">
+	<link rel="stylesheet" href="docs/css/index.css">
+	<link rel="stylesheet" href="dist/css/scrollbar.min.css">
+
+ </head>
+ <body >
+
+	<div style="display: none;">
+		<img src="docs/images/hbook.jpg" alt="简洁、直观的前端UI框架－Hbook">
+	</div>
+	
+	<!-- banner begin -->
+	<div class="banner"  id="h-index">
+		<h2 class="title">Scrollbar</h2>
+		<p>滚动条</p>
+		<div class="btn-group">
+			<a href="https://github.com/hwgq2005/modal-mobile" class="btn btn-large btn-primary download">Scrollbar (v0.0.1)</a>
+			<a href="#start" class="btn btn-large btn-primary download">开始使用</a>
+		</div>
+	</div>
+	<!-- banner end -->
+
+	<!-- content begin -->
+	<div class="index w-768" id="start">
+		<div class="module">
+			<h1 class="module-tit">Get Start</h1>
+<pre class="prettyprint linenums">
+ &lt;!--  核心 CSS 文件  -->
+ &lt;link rel="stylesheet" href="https://unpkg.com/scrollbar/dist/css/scrollbar.min.css">
+
+ &lt;!--  核心 JS 文件  -->
+ &lt;script src="https://unpkg.com/scrollbar/dist/js/scrollbar.min.js"></script>
+</pre>
+		</div>
+
+		<div class="module">
+			<h1 class="module-tit">Demo</h1>
+			<div class="docs-example">
+				
+				<div id="scroll" class="scroll">
+
+					<div class="scroll-content">
+					你会发现：JavaScript解释器认为null是属于object数据类型的一种特殊形式，而function(){}是function类型，也就是说函数也是一种基本数据类型，而不是对象的一种特殊形式。
+实际上，在JavaScript中，函数是一个极容易引起误解或引发歧义的数据类型，它可以是独立的函数类型，又可以作为对象的方法，也可以被称为类或构造器，还可以作为函数对象而存在等。
+所以，在《JavaScript权威指南》中把function被看做是object基本数据类型的一种特殊对象，另外《悟透JavaScript》和《JavaScript高级程序设计》也把函数视为对象，而不是一种基本数据类型。但是在《JavaScript语言精髓与编程实践》中却把function视为一种基本数据类型，而把null视为object类型的一种特殊形式。至于谁对谁错，看来只有根据具体情况而定了。
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="module">
+			<h1 class="module-tit">Usage</h1>
+<pre class="prettyprint linenums">
+调用方式：
+Scrollbar({
+	id:'scroll',
+	height:80
+})
+</pre>
+			<div class="margin-20">
+				<table class="table table-bordered table-zebra">
+		            <thead>
+		              <tr>
+		                <th>属性</th>
+		                <th>备注说明</th>
+		              </tr>
+		            </thead>
+		            <tbody>
+		              <tr>
+		                <td><code>id</code></td>
+		                <td>string，例如："modal"</td>
+		              </tr>
+		              <tr>
+		                <td><code>height</code></td>
+		                <td>number，内容高度</td>
+		              </tr>
+		              
+		            </tbody>
+		          </table>  
+			</div>
+		</div>
+	</div>	
+
+	<!-- content end -->
+
+	<!-- footer begin -->
+	<footer class="footer w-768">
+		<div class="footer-content">
+			<p>© Hbook 2016-2017 All right reserved By <a href="http://www.weibo.com/hwgq2005" target="_blank" title="微博">@hwgq2005</a> </p>
+			<p>Email：<a href="mailto:hbook@bookcss.com" title="邮箱">hbook@bookcss.com</a></p>
+		</div>
+	</footer>
+	<!-- footer end -->
+
+    <script src="docs/js/lib/prettify.js"></script>
+    <script src="dist/js/scrollbar.js"></script>
+    <script src="docs/js/main.min.js"></script>
+ </body>
+
+</html>
