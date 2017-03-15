@@ -13,7 +13,7 @@
 
 	Scrollbar({
 		id:'scroll',
-		height:80
+		height:60
 	})
 
 	prettyPrint();

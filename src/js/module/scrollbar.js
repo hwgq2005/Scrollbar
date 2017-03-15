@@ -48,6 +48,7 @@
 		var _self = this;
 
 		if (!element) return;
+		if (options.height == null || typeof options.height != 'number') return;
 
 		element.className += ' scroll-wrapper';
 		_self.scrollContentHeight = element.offsetHeight; // 获取区域高度
@@ -158,7 +159,7 @@
 
 		var	overHeight = _self.options.height - (_self.scrollBarHeight + scrollBarTop), //滚动条剩下多少到底部
 			oneScrollHeight = parseInt((scrollBarTop + scrollHeight)* _self.scrollContentHeight /  _self.options.height);//每滚1像素对等于内容区域的滚动高度
-
+		console.log(_self.direct)
 		if (_self.direct > 0) {
 
 			//判断滚动条Top值是否大于0
@@ -170,7 +171,6 @@
 				_self.scrollBar.style.top = Top + 'px';
 				_self.scrollContent.style.top = - oneScrollHeight  + 'px';
 			}
-
 		} else {
 
 			//判断滚动条Top值是否小于（固定高度再减去滚动条高度）
